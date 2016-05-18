@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "fakeDNS", "fakeDNS.vbproj", "{03190824-8160-4CD3-A576-CD545165CB4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Debug|x86.ActiveCfg = Debug|x86
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Debug|x86.Build.0 = Debug|x86
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Release|x86.ActiveCfg = Release|x86
+		{03190824-8160-4CD3-A576-CD545165CB4A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
