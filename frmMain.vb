@@ -6,8 +6,8 @@ Imports System.Collections
 Imports System.Collections.Specialized
 Imports System.Drawing
 Imports System.Windows.Forms
-Imports UpgradeHelpers.Gui
-Imports UpgradeHelpers.Helpers
+'Imports UpgradeHelpers.Gui
+'Imports UpgradeHelpers.Helpers
 Partial Friend Class frmMain
     Inherits System.Windows.Forms.Form
     '
@@ -170,7 +170,7 @@ Partial Friend Class frmMain
             txtLog.Text = ""
 
         Catch exc As Exception
-            NotUpgradedHelper.NotifyNotUpgradedElement("Resume in On-Error-Resume-Next Block")
+            Console.Write("Resume in On-Error-Resume-Next Block")
         End Try
     End Sub
 
@@ -186,7 +186,7 @@ Partial Friend Class frmMain
             My.Computer.Clipboard.SetText(tmp)
 
         Catch exc As Exception
-            NotUpgradedHelper.NotifyNotUpgradedElement("Resume in On-Error-Resume-Next Block")
+            Console.Write("Resume in On-Error-Resume-Next Block")
         End Try
     End Sub
 
@@ -294,7 +294,7 @@ Partial Friend Class frmMain
             Dim rep() As Byte
 
             While busy
-                UpgradeSolution1Support.SafeNative.kernel32.Sleep(10)
+                Threading.Thread.Sleep(1)
                 Application.DoEvents()
             End While
 
@@ -336,7 +336,7 @@ Partial Friend Class frmMain
             ControlArrayHelper.LoadControl(Me, "ws", 1)
             ws(1).Bind(53)
 
-            UpgradeSolution1Support.SafeNative.kernel32.Sleep(10)
+            Threading.Thread.Sleep(1)
             Application.DoEvents()
             busy = False
 
@@ -373,11 +373,11 @@ Partial Friend Class frmMain
                         Exit For
                     End If
                 Next
-                If Not found Then List1.AddItem(x.Trim())
+                If Not found Then List1.Items.Add(x.Trim())
             Next x
 
         Catch exc As Exception
-            NotUpgradedHelper.NotifyNotUpgradedElement("Resume in On-Error-Resume-Next Block")
+            Console.Write("Resume in On-Error-Resume-Next Block")
         End Try
 
     End Sub
@@ -396,7 +396,7 @@ Partial Friend Class frmMain
             txtLog.SelectionStart = Microsoft.VisualBasic.Strings.Len(txtLog.Text)
 
         Catch exc As Exception
-            NotUpgradedHelper.NotifyNotUpgradedElement("Resume in On-Error-Resume-Next Block")
+            Console.Write("Resume in On-Error-Resume-Next Block")
         End Try
 
     End Sub
@@ -432,8 +432,9 @@ Partial Friend Class frmMain
 
     Function hexdump(ByRef it As String) As String
         Dim a As Integer
-        Dim b, c As String
-        Dim lines() As String
+        Dim b As String = ""
+        Dim c As String
+        Dim lines() As String = ""
 
         Dim my As String = ""
         For i As Integer = 1 To Microsoft.VisualBasic.Strings.Len(it)
@@ -536,4 +537,8 @@ Partial Friend Class frmMain
     'C0 0C C0 0C | 00 02 00 01 | 00 00 06 55 | 00 06 03 6E [...........U...n]
     '73 32 C0 0C | C0 0C 00 02 | 00 01 00 00 | 06 55 00 06 [s2...........U..]
     '03 6E 73 31 | C0 0C       |             |             [.ns1..]
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

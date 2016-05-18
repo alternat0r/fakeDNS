@@ -40,38 +40,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
-    <Reference Include="UpgradeHelpers.Gui">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.Gui.dll</HintPath>
-    </Reference>
-    <Reference Include="UpgradeHelpers.Gui.ContainerHelper">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="UpgradeHelpers.Gui.Graphics">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.Gui.Graphics.dll</HintPath>
-    </Reference>
-    <Reference Include="UpgradeHelpers.SupportHelper">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.SupportHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="UpgradeHelpers.Utils.ReflectionHelper">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.Utils.ReflectionHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="UpgradeHelpers.Utils">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.Utils.dll</HintPath>
-    </Reference>
-    <Reference Include="UpgradeHelpers.VB">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.VB.dll</HintPath>
-    </Reference>
-    <Reference Include="UpgradeHelpers.NotUpgradeHelper">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UpgradeSupport\UpgradeHelpers.NotUpgradeHelper.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <COMReference Include="VBScript_RegExp_55">
       <Guid>{3F4DACA7-160D-11D2-A8E9-00104B365C9F}</Guid>

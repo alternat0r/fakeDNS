@@ -1,0 +1,6 @@
+C:\Users\Kamil\Documents\Visual Studio 2012\Projects\fakeDNS\obj\x86\Debug\Interop.VBScript_RegExp_55.dll
+C:\Users\Kamil\Documents\Visual Studio 2012\Projects\fakeDNS\obj\x86\Debug\Interop.MSWinsockLib.dll
+C:\Users\Kamil\Documents\Visual Studio 2012\Projects\fakeDNS\obj\x86\Debug\AxInterop.MSWinsockLib.dll
+C:\Users\Kamil\Documents\Visual Studio 2012\Projects\fakeDNS\obj\x86\Debug\fakeDNS.vbproj.ResolveComReference.cache
+C:\Users\Kamil\Documents\Visual Studio 2012\Projects\fakeDNS\obj\x86\Debug\Project1.frmMain.resources
+C:\Users\Kamil\Documents\Visual Studio 2012\Projects\fakeDNS\obj\x86\Debug\fakeDNS.vbproj.GenerateResource.Cache
